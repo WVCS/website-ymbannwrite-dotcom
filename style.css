@@ -1,27 +1,72 @@
 <!doctype html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Tony's Website - Projects</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-</head>
-<body>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center; 
+}
 
-    <header>
-        <h2>Game Filter App</h2>
-    </header>
+header {
+    margin-top: 40px;
+}
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="page2.html" class="active">Things to see</a></li>
-        </ul>
-    </nav>
+h2 {
+    font-size: 28px;
+    color: #222;
+}
 
-    <main class="app-container">
-        <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/bbaa9629-0e17-4598-834d-7c7ba1b8d340/embed"></iframe>
-        <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/5efe9367-f76f-4b7e-9e75-c3ea31bf10da/embed"></iframe>
-    </main>
 
-</body>
+nav {
+    margin: 20px 0 40px 0;
+}
+
+nav ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block; 
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none; 
+    color: #666;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+
+nav a:hover, nav a.active {
+    color: #000;
+    border-bottom: 2px solid #333;
+}
+
+.main-img {
+    max-width: 90%;
+    width: 600px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+
+.app-container {
+    display: block;
+    margin: 0 auto;
+}
+
+iframe {
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
 </html>
